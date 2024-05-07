@@ -52,37 +52,7 @@ public static class Menu
 
     public static void DisplayItems(CCSPlayerController player, string key, Dictionary<string, Dictionary<string, string>> items, bool inventory)
     {
-        Dictionary<string, Dictionary<string, string>> playerSkinItems = items.Where(p => p.Value["type"] == "playerskin" && p.Value["enable"] == "true").ToDictionary(p => p.Key, p => p.Value);
-
-        if (playerSkinItems.Count != 0)
-        {
-            CenterHtmlMenu menu = new(key, Instance);
-
-            foreach (int Slot in new[] { 2, 3 })
-            {
-                if ((inventory || Item.IsPlayerVip(player)) && !playerSkinItems.Any(item => Item.PlayerHas(player, item.Value["type"], item.Value["uniqueid"], false)))
-                {
-                    continue;
-                }
-
-                using (new WithTemporaryCulture(player.GetLanguage()))
-                {
-                    StringBuilder builder = new();
-                    builder.AppendFormat(Instance.Localizer[$"menu_store<{(Slot == 2 ? "t" : "ct")}_title>"]);
-
-                    menu.AddMenuOption(builder.ToString(), (CCSPlayerController player, ChatMenuOption option) =>
-                    {
-                        DisplayItem(player, inventory, builder.ToString(), playerSkinItems.Where(p => p.Value.TryGetValue("slot", out string? slot) && !string.IsNullOrEmpty(slot) && int.Parse(p.Value["slot"]) == Slot).ToDictionary(p => p.Key, p => p.Value));
-                    });
-                }
-            }
-
-            MenuManager.OpenCenterHtmlMenu(Instance, player, menu);
-        }
-        else
-        {
-            DisplayItem(player, inventory, key, items);
-        }
+        DisplayItem(player, inventory, key, items);
     }
 
     public static void DisplayItem(CCSPlayerController player, bool inventory, string key, Dictionary<string, Dictionary<string, string>> items)

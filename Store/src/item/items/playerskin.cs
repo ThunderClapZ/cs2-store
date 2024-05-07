@@ -34,26 +34,13 @@ public static class Item_PlayerSkin
     }
     public static bool OnEquip(CCSPlayerController player, Dictionary<string, string> item)
     {
-        if (!item.TryGetValue("slot", out string? slot) || string.IsNullOrEmpty(slot))
-        {
-            return false;
-        }
-
-        SetPlayerModel(player, item["uniqueid"], item["disable_leg"], int.Parse(item["slot"]));
+        SetPlayerModel(player, item["uniqueid"], item["disable_leg"]);
 
         return true;
     }
     public static bool OnUnequip(CCSPlayerController player, Dictionary<string, string> item)
     {
-        if (!item.TryGetValue("slot", out string? slot) || string.IsNullOrEmpty(slot))
-        {
-            return false;
-        }
-
-        if (player.TeamNum == int.Parse(item["slot"]))
-        {
-            SetDefaultModel(player);
-        }
+        SetDefaultModel(player);
 
         return true;
     }
@@ -71,7 +58,7 @@ public static class Item_PlayerSkin
             return HookResult.Continue;
         }
 
-        Store_Equipment? item = Instance.GlobalStorePlayerEquipments.FirstOrDefault(p => p.SteamID == player.SteamID && p.Type == "playerskin" && p.Slot == player.TeamNum);
+        Store_Equipment? item = Instance.GlobalStorePlayerEquipments.FirstOrDefault(p => p.SteamID == player.SteamID && p.Type == "playerskin");
 
         if (item == null)
         {
@@ -86,7 +73,7 @@ public static class Item_PlayerSkin
                 return HookResult.Continue;
             }
 
-            SetPlayerModel(player, item.UniqueId, itemdata["disable_leg"], item.Slot);
+            SetPlayerModel(player, item.UniqueId, itemdata["disable_leg"]);
         }
 
         return HookResult.Continue;
@@ -102,10 +89,10 @@ public static class Item_PlayerSkin
 
             string model = modelsArray[randomnumber];
 
-            SetPlayerModel(player, model, Instance.Config.Settings["default_model_disable_leg"], player.TeamNum);
+            SetPlayerModel(player, model, Instance.Config.Settings["default_model_disable_leg"]);
         }
     }
-    private static void SetPlayerModel(CCSPlayerController player, string model, string disable_leg, int slotNumber)
+    private static void SetPlayerModel(CCSPlayerController player, string model, string disable_leg)
     {
         float apply_delay = 0.1f;
 
@@ -116,7 +103,7 @@ public static class Item_PlayerSkin
 
         Instance.AddTimer(apply_delay, () =>
         {
-            if (player.IsValid && player.TeamNum == slotNumber && player.PawnIsAlive)
+            if (player.IsValid && player.PawnIsAlive)
             {
                 player.PlayerPawn.Value?.ChangeModel(model, disable_leg);
             }

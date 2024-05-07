@@ -68,22 +68,21 @@
             "armModel": "",
             "type": "playerskin",
             "price": "0",
-            "slot": "2",
-            "disable_leg": "false",
-            "expiration": "0",
-            "enable": "true"
-        },
-        "2": {
-            "name": "老K",
-            "uniqueid": "characters/models/tm_professional/tm_professional_vari.vmdl",
-            "armModel": "",
-            "type": "playerskin",
-            "price": "0",
-            "slot": "3",
             "disable_leg": "false",
             "expiration": "0",
             "enable": "true"
         }
+    },
+    "customweapons": {
+      "1": {
+          "name": "电磁炮",
+          "uniqueid": "models/weapons/thunder/scp/aw50.vmdl",
+          "weapon": "weapon_ak47",
+          "type": "customweapon",
+          "price": "0",
+          "expiration": "0",
+          "enable": "true"
+      }
     }
   },
   "ConfigVersion": 1
