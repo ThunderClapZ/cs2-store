@@ -31,3 +31,6 @@ Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInf
 StoreApi/obj/Debug/net8.0/StoreApi.AssemblyInfo.cs
 Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInfo.cs
 Store_Modules/Store_Roulette/obj/Debug/net8.0/cs2-store-roulette.AssemblyInfo.cs
+Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInfo.cs
+StoreApi/obj/Debug/net8.0/StoreApi.AssemblyInfo.cs
+Store_Modules/Store_Roulette/obj/Debug/net8.0/cs2-store-roulette.AssemblyInfo.cs
