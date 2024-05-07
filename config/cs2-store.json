@@ -1,0 +1,90 @@
+{
+  "tag_prefix": "{red} [小卖部]",
+  "database": {
+    "host": "rm-bp1eqpzh12z2ho2391o.mysql.rds.aliyuncs.com",
+    "port": "3306",
+    "user": "store",
+    "password": "Df789236@",
+    "name": "db_store"
+  },
+  "commands": {
+    "credits": [
+      "credits",
+      "tl"
+    ],
+    "store": [
+      "store",
+      "shop",
+      "market"
+    ],
+    "inventory": [
+      "inv",
+      "inventory"
+    ],
+    "givecredits": [
+      "givecredits"
+    ],
+    "gift": [
+      "gift"
+    ],
+    "resetplayer": [
+      "resetplayer"
+    ],
+    "resetdatabase": [
+      "resetdatabase"
+    ]
+  },
+  "defaultmodels": {
+    "ct": [
+    ],
+    "t": [
+    ]
+  },
+  "credits": {
+    "ignore_warmup": 1,
+    "start": 0,
+    "interval_active_inactive": 60,
+    "amount_active": 1,
+    "amount_inactive": 0,
+    "amount_kill": 0
+  },
+  "menu": {
+    "enable_selling": "0",
+    "vip_flag": "@css/root"
+  },
+  "settings": {
+    "max_health": "0",
+    "max_armor": "0",
+    "sell_ratio": "0.60f",
+    "default_model_disable_leg": "false",
+    "database_equip_table_name": "store_equipments",
+    "apply_playerskin_delay": "1.5f"
+  },
+  "items": {
+    "playerskins": {
+        "1": {
+            "name": "老K",
+            "uniqueid": "characters/models/tm_professional/tm_professional_vari.vmdl",
+            "armModel": "",
+            "type": "playerskin",
+            "price": "0",
+            "slot": "2",
+            "disable_leg": "false",
+            "expiration": "0",
+            "enable": "true"
+        },
+        "2": {
+            "name": "老K",
+            "uniqueid": "characters/models/tm_professional/tm_professional_vari.vmdl",
+            "armModel": "",
+            "type": "playerskin",
+            "price": "0",
+            "slot": "3",
+            "disable_leg": "false",
+            "expiration": "0",
+            "enable": "true"
+        }
+    }
+  },
+  "ConfigVersion": 1
+}

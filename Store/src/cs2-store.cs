@@ -32,22 +32,9 @@ public class Store : BasePlugin, IPluginConfig<StoreConfig>
         Event.Load();
         Command.Load();
 
-        Item_Armor.OnPluginStart();
-        Item_ColoredSkin.OnPluginStart();
         Item_CustomWeapon.OnPluginStart();
-        Item_Godmode.OnPluginStart();
-        Item_Gravity.OnPluginStart();
-        Item_GrenadeTrail.OnPluginStart();
-        Item_Health.OnPluginStart();
-        Item_Open.OnPluginStart();
         Item_PlayerSkin.OnPluginStart();
-        Item_Respawn.OnPluginStart();
-        Item_Smoke.OnPluginStart();
         Item_Sound.OnPluginStart();
-        Item_Speed.OnPluginStart();
-        Item_Tracer.OnPluginStart();
-        Item_Trail.OnPluginStart();
-        Item_Weapon.OnPluginStart();
 
         if (hotReload)
         {

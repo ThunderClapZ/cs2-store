@@ -23,3 +23,11 @@ StoreApi/bin/Debug/net8.0/StoreApi.deps.json
 StoreApi/obj/Debug/net8.0/StoreApi.sourcelink.json
 StoreApi/obj/project.assets.json
 StoreApi/obj/StoreApi.csproj.nuget.dgspec.json
+Store_Modules/Store_Roulette/obj/Debug/net8.0/cs2-store-roulette.AssemblyInfo.cs
+Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInfo.cs
+StoreApi/obj/Debug/net8.0/StoreApi.AssemblyInfo.cs
+Store_Modules/Store_Roulette/obj/Debug/net8.0/cs2-store-roulette.AssemblyInfo.cs
+Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInfo.cs
+StoreApi/obj/Debug/net8.0/StoreApi.AssemblyInfo.cs
+Store_Modules/Store_TestModule/obj/Debug/net8.0/cs2-store-testmodule.AssemblyInfo.cs
+Store_Modules/Store_Roulette/obj/Debug/net8.0/cs2-store-roulette.AssemblyInfo.cs

@@ -79,24 +79,10 @@ public static class Event
         }
 
         Instance.GlobalTickrate = 0;
-
-        foreach (CCSPlayerController player in Utilities.GetPlayers())
-        {
-            if (!player.PawnIsAlive)
-            {
-                continue;
-            }
-
-            Item_Trail.OnTick(player);
-            Item_ColoredSkin.OnTick(player);
-            Item_GrenadeTrail.OnTick();
-        }
     }
 
     public static void OnEntityCreated(CEntityInstance entity)
     {
-        Item_Smoke.OnEntityCreated(entity);
-        Item_GrenadeTrail.OnEntityCreated(entity);
         Item_CustomWeapon.OnEntityCreated(entity);
     }
 
