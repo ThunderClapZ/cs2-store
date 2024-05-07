@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-	  <None Update="lang\en.json" CopyToOutputDirectory="PreserveNewest" />
+	  <None Update="lang\**\*.*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
   <ItemGroup>

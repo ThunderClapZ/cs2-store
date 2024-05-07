@@ -1,0 +1,62 @@
+{
+    "No matching client": "{white}没有符合条件的客户端",
+    "More than one client matched": "{white}超过一个符合的客户端",
+    "Must be an integer": "{white}必须是整数",
+    "Must be higher than zero": "{white}必须大于0.",
+    "Must be a steamid": "{white}必须是合法的STEAMID",
+    "No credits enough": "{white}没有足够的星光.",
+    "You are not alive": "{white}只有活着才能使用.",
+    "You are alive": "{white}只有死亡才能使用.",
+    "No in pistol round": "{white}无法购买： {green}{0} {white} 现在是手枪局.",
+    "No gift yourself": "{white}不能给自己星光.",
+    "No type found": "{white}无可用类型.",
+
+    "t team players": "{green}T阵营 {white}玩家",
+    "ct team players": "{green}CT阵营 {white}玩家",
+    "alive players": "{green}活着的 {white}玩家",
+    "all players": "{green}所有 {white}玩家",
+    "dead players": "{green}死亡 {white}玩家",
+    "Console": "Console",
+
+    "Purchase Succeeded": "{white}你 {white}购买了 {green}{0}{white}.",
+    "Purchase Equip": "{white}你 {white}装备了 {green}{0}{white}.",
+    "Purchase Unequip": "{white}你 {white}取消装备了 {green}{0}{white}.",
+    "Item Sell": "{white}你 {white}出售了 {green}{0}{white}.",
+    "Godmode expired": "{white}已过期.",
+    "Speed expired": "{white}已过期.",
+
+    "menu_store<title>": "小卖部 [星光: {0}]",
+
+    "menu_store<playerskins>": "人物皮肤",
+    "menu_store<weapons>": "武器皮肤",
+    "menu_store<features>": "特殊功能",
+    "menu_store<gravity>": "Gravity",
+    "menu_store<speed>": "Speed",
+    "menu_store<godmode>": "Godmode",
+    "menu_store<smoke>": "Smoke",
+    "menu_store<trail>": "Trail",
+    "menu_store<grenadetrail>": "Grenade Trail",
+    "menu_store<tracer>": "Tracer",
+    "menu_store<colorskins>": "Colorskins",
+
+    "menu_store<t_title>": "T模型",
+    "menu_store<ct_title>": "CT模型",
+    "menu_store<purchase>": "{0} - [{1}]",
+    "menu_store<equip>": "装备",
+    "menu_store<unequip>": "取消装备",
+    "menu_store<sell>": "出售 [{0}]",
+
+    "css_credits": "{white}你拥有 {green}{0} {white}星光.",
+    "css_givecredits<player>": "{blue}{0} {white}给了 {green}{2} 星光 {white}给 {green}{1}{white}.",
+    "css_givecredits<steamid>": "{blue}{0} {white}给了 {green}{2} 星光 {white}给 {green}{1}{white}.",
+    "css_givecredits<multiple>": "{blue}{0} {white}给了 {green}{2} 星光 {white}给 {green}{1}{white}.",
+
+    "css_gift<player>": "{white}你给了 {green}{1}{white}星光给 {blue}{0}{white}.",
+    "css_gift<target>": "{blue}{0} {white}给了你 {green}{1} {white}星光.",
+
+    "css_reset": "{blue}{0}{white} 重置了 {green}{1}{white} 的小卖部数据.",
+
+    "credits_earned<active>": "{white}你获得了 {green}{0} 星光 {white} - 活跃游戏.",
+    "credits_earned<inactive>": "{white}你获得了 {green}{0} 星光 {white} - 不活跃.",
+    "credits_earned<kill>": "{white}你获得了 {green}{0} 星光 {white} - 击杀玩家."
+}
