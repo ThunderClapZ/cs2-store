@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("cs2-store-testmodule")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ad91eeec2d7d19cfc801a413dcc20b7e1815c2e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9180c710d8e5c27a48ac4e87a3e73a50ffeafdd9")]
 [assembly: System.Reflection.AssemblyProductAttribute("cs2-store-testmodule")]
 [assembly: System.Reflection.AssemblyTitleAttribute("cs2-store-testmodule")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
